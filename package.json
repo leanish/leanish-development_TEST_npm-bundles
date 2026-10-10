@@ -1,0 +1,16 @@
+{
+  "name": "test-supply-chain-npm-bundles",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real npm bundled-copy security fixture for supply-chain.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.cjs"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.272.0",
+    "constructs": "10.5.0"
+  }
+}
