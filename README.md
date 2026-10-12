@@ -20,9 +20,12 @@ npm ci --ignore-scripts --no-audit --no-fund
 npm test
 ```
 
-EXPECTED.md defines remediation, inventory and timing acceptance. Run secure-it
-and bump-it independently from the same seed. Do not merge a routine CDK update
-before exercising the security carrier move.
+EXPECTED.md defines remediation, inventory and timing acceptance. VALIDATION.md
+records the seed and the tool runs. Run secure-it and bump-it independently from
+the same seed. Do not merge a routine CDK update before exercising the security
+carrier move.
 
-Gate adoption uses the same supply-chain commit for inventory and comparison;
-see EXPECTED.md for the prerelease pin and released v0.3.0 acceptance.
+This fixture isn't part of regular tool passes: it runs only in release-candidate
+passes that opt fixtures in (`SUPPLY_CHAIN_FIXTURES=1`).
+The gate is pinned to supply-chain v0.4.0 and uses the same commit for inventory
+and comparison; the tools are at v0.4.2. EXPECTED.md has the pin history.
