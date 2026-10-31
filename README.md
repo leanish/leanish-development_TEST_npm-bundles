@@ -20,8 +20,8 @@ npm ci --ignore-scripts --no-audit --no-fund
 npm test
 ```
 
-EXPECTED.md defines remediation, inventory and timing acceptance. VALIDATION.md
-records the seed and the tool runs. Run secure-it and bump-it independently from
+Case expectations, acceptance steps and validation evidence are kept outside the
+fixture repositories for human and release validation. Run secure-it and bump-it independently from
 the same seed. Do not merge a routine CDK update before exercising the security
 carrier move.
 
